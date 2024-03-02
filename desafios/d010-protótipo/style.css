@@ -1,0 +1,164 @@
+@charset "  UTF-8";
+
+@font-face {
+    font-family: "idroid";
+    src: url(fontes/idroid.otf);
+}
+
+
+body {
+    background-color: #84E1AD;
+    font: normal 1em "Arial", sans-serif;
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(to top, #175132, #175132, #268952, #3CD782);
+    color: white;   
+    padding-top: 10px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.199);
+}
+
+header > h1 {
+    font-family: fantasy, sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+header > p {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+
+nav {
+    background-color: #175132;
+}
+
+nav > a {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    background-color: white;
+    width: min-content;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212);
+    margin-bottom: 15px;
+}
+
+main > h1 {
+    margin: 0px;
+    padding: 20px 20px 5px 20px;
+    font: bold 2em "idroid", sans-serif;
+    color: #175132;
+}
+
+article > h2 {
+    color: #175132;
+    font: bold 1.5em "idroid", sans-serif;
+    background-image: linear-gradient(to right, #3cd782a9, #3cd78234, #3cd78204);
+    padding: 2px 5px;
+    margin: 10px 15px;
+}
+
+p {
+    text-indent: 20px;
+    text-align: justify;
+    padding: 10px;
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 10px 10px 10px 20px;
+}
+
+iframe {
+    padding: 10px 20px;
+    background-color: #175132;
+    margin:auto;
+}
+
+img {
+    margin: 10px;
+}
+
+.imagem {
+    margin: auto;
+}
+
+aside {
+    background-color: #a4e2bf;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.247);
+}
+
+aside > div {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+p.final {
+    padding-bottom: 30px;
+}
+
+aside > h1 {
+    margin: 0px;
+    background-color: #2fa564;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    color: white;
+    font: bolder 16px "Arial", sans-serif;
+}
+
+footer {
+    background-color: #175132;
+}
+
+footer > p {
+   color: white;
+   text-align: center; 
+}
+
+span {
+    color: #bfecd4;
+}
+
+strong {
+    color: #20834e;
+}
+
+a {
+    text-decoration: none;
+    color: #20834e;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav > a::after {
+    content: none;
+}
+
+a::after {
+    content: "\1F517";
+}
+
+ul {
+  list-style-type: none; /*retira o simbulos padrão de listas*/
+}
+
+ul li::before {
+    content: "\2713 \0020"; /*colocará um simbulo antes da lista. São eles: marca de verificação e espaço respectivamente*/
+    font-weight: bolder;
+}

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body {
+    font: normal 1em 'Arial', sans-serif;
+    background-image: linear-gradient(to top, rgb(111, 211, 111), rgb(187, 243, 187));
+    background-attachment: fixed;
+}
+
+h2{
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    margin: 10px;
+}
+
+header > h1 {
+    font: bold 2em "Anta", sans-serif;
+    text-align: center;
+}
+
+div {
+    background-color: white;
+    height: auto;
+    width: 300px;
+    border: 2px solid black;
+    display: inline-table;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+}
+
+main {
+    margin: auto;
+    width: fit-content;
+}
+
+a {
+    text-align: left;
+    text-decoration: none;
+    font: bold 20px "Anta", sans-serif;
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+
+}
+
+a:hover {
+    font-size: 22px;
+    background-color: rgb(8, 97, 8);
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.705) inset;
+}

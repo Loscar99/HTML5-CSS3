@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <link rel="shortcut icon" href="html-favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque:</h2>
+    <p>Nesta frase temos um <b>termo em destaque</b> usando a tag B - <strong>não semântico</strong></p>
+    <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag STRONG - <strong>semântico</strong></p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I - <em>não semântico</em></p>
+    <p>
+        Nesta frase, temos um <em>termo em itálico</em> usando a tag EM - <em>semântico</em>
+       <h2>Marcar Texto</h2>
+       <p>Nessa frase temos um <mark>termo marcado</mark> pela tag MARK</p>
+       <h2>Texto <big>Grande</big>, Texto <small>Pequeno</small></h2>
+       <p>Nesta frase, temos uma palavra <big>grande</big> e outra<small> pequena</small> utilizando as tags BIG e SMALL respectivamente.(A tag BIG está <strong>absoleta</strong>)</p>
+       <h2>Texto Deletado</h2>
+       <p>Nesta frase temos um texto deletado,<del>assim como esse</del>, usando a tag DEL</p>
+       <h2>Texto Insirido</h2>
+       <p>Já nesse, <INS>assim como nos outros</INS>, temos  um texto insirido usando a tag INS</p>
+       <H2>Texto Subscrito e Sobrescrito</H2>
+       <p>Exemplos de textos subscrito e sobrescrito: <br> H<sub>2</sub>O &rarr; tag SUB  <br> X<sup>5</sup> &rarr; tag SUP</p>
+       <h2>Treho de Código</h2>
+       <p>Para escrever um código de uma forma que seja de facil leitura e que indentifique-o, usa-se a tag CODE. <br> Exemplos: <br><code>
+             // Solicitar ao usuário para inserir o primeiro número
+             let numero1 = prompt("Digite o primeiro número:");
+           
+            // Converter a entrada do usuário para um número
+            numero1 = parseFloat(numero1);
+           
+            // Solicitar ao usuário para inserir o segundo número
+            let numero2 = prompt("Digite o segundo número:");
+           
+            // Converter a entrada do usuário para um número
+            numero2 = parseFloat(numero2);
+           
+            // Calcular a soma dos dois números
+            let soma = numero1 + numero2;
+           
+            // Exibir o resultado no console
+            console.log("A soma de " + numero1 + " e " + numero2 + " é: " + soma);
+       </code> </p> <p> Para o código ficar igual como foi codado usa-se a tag PRE, juntamente com o CODE, para assim, o texto fica pré-formatado como foi escrito. <br> Exemplo: <br> <pre><code>// Solicitar ao usuário para inserir o primeiro número
+        let numero1 = prompt("Digite o primeiro número:");
+        
+        // Converter a entrada do usuário para um número
+        numero1 = parseFloat(numero1);
+        
+        // Solicitar ao usuário para inserir o segundo número
+        let numero2 = prompt("Digite o segundo número:");
+        
+        // Converter a entrada do usuário para um número
+        numero2 = parseFloat(numero2);
+        
+        // Calcular a soma dos dois números
+        let soma = numero1 + numero2;
+        
+        // Exibir o resultado no console
+        console.log("A soma de " + numero1 + " e " + numero2 + " é: " + soma);
+        </code></pre>
+        </p>
+        <h2>Citações</h2>
+        <p>Para fazer citações, basta usar a tag Q. <br> Exemplo: <br> <q>Só sei que nada sei</q></p> 
+        <p>Para citações centralizadas e com parágrafo, usa-se a tag BLOCKQUOTE <br> Exemplo: <br> <blockquote>
+            "Você é mais forte do que imagina e mais capaz do que pensa. Cada novo dia é uma oportunidade para aprender, crescer e se tornar a melhor versão de si mesmo. As adversidades são apenas degraus no caminho do sucesso, e cada desafio superado é uma conquista que te aproxima dos teus objetivos.
+                Lembre-se de que os momentos difíceis são temporários, mas a sua resiliência é duradoura. Cada passo em direção aos seus sonhos, por menor que seja, é uma vitória. Não se compare aos outros; sua jornada é única e digna de orgulho.
+            
+                Acredite no seu potencial, mantenha a positividade mesmo diante das dificuldades, e saiba que você é capaz de alcançar o que deseja. Mantenha a chama da determinação acesa, pois o sucesso é uma jornada, não um destino. Continue acreditando em si mesmo, pois você é a força que precisa para transformar sonhos em realidade."
+        </blockquote> <em>ChatGPT</em> 
+        <p>Para adicionar um link usa-se o parâmetro CITE. <br> Exemplo: <br> <blockquote cite="https://www.selecoes.com.br/humor/frases-engracadas-para-status-do-whatsapp/#:~:text=Prezados%20problemas%2C%20por%20favor%2C%20deem%2Dme%20algum%20desconto.%20Sou%20seu%20cliente%20regular.">"Prezados problemas, por favor, deem-me algum desconto. Sou seu cliente regular."</blockquote></p>
+        <h2>Abreviações</h2>
+        <p>Para colocar abreviações que vá além de só as siglas, usa-se a tag ABBR. Nela é possível colocar o name do que está sendo abreviado, assim, quando o cursor do mause passar em cima da sigla aparecerá o seu nome não abreviado. <br> Exemplo: <br> A <abbr title="Organização das Nações Unidas">ONU</abbr>, proíbe  explosões nucleares em qualquer lugar da Terra, seja em sua superfície, atmosfera, debaixo d'água ou subsolo.</p>
+        <h2>Texto Invertido</h2>
+        <p>Para nverter um texto, usa-se o tag BDO, nela em DIR, escolhe a direção: <br>rtl= direita para esquerda - <del>o que na realidade não faz nada</del> <br> ltr= esquerda par direita. <br> Exemplos: <br> <bdo dir="ltr">texto invertido ltr</bdo> <br> <bdo dir="rtl">texto invertido rtl</bdo></p>
+
+            
+            
+            
+            
+            
+           
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body {
+    font: normal 1em Arial, Helvetica, sans-serif;
+   background-color: #5F5070;
+}
+
+header {
+    font-family:  "Anta", sans-serif;
+    background-color: azure;
+    text-align: center;
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 3px #3e324b;
+}
+
+nav {
+    background-color: #F5E784;
+    border: 2px solid rgb(60, 60, 161);
+    margin: 5px;
+    box-shadow: 2px 2px 3px gray;
+
+}
+
+nav > a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #821be2;
+    margin: 20px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    font-size: large;
+}
+
+main {
+    background-color: #b8e4f1;
+    border: 2px solid black;
+    box-shadow:  2px 2px 3px #3e324b;
+}
+
+aside {
+    background-color: #cab3e4;
+    margin: 5px;
+    text-align: center;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: rgb(60, 34, 85);
+}
+
+article {
+    background-color: white;
+    border: 2px solid black;
+    margin: 5px;
+    width: auto;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: white;
+    border: 2px solid black;
+    margin: 5px;
+    box-shadow:  2px 2px 3px #3e324b;
+    
+}
+
+footer > p {
+    text-align: center;
+    margin: 5px;
+}
+
+footer > ul {
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+}
+
+
+
+
