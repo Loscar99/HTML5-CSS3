@@ -6,23 +6,19 @@
     <title>Teste de imagens</title>
     <style>
         body {
-            background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-repeat: repeat-y;
-            background-position: center center ;
+            height: 97vh; /*porcentagem da viewport*/
             background-size: cover;
-            height: 97vh;
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat  fixed; /*color image position repeat attachment*/
         }
 
         main {
-            background-color: rgba(255, 255, 255, 0.836);
-            min-width: 300px;
+            background-color: rgba(255, 255, 255, 0.836);     
             max-width: 500px;
             margin: auto;
             padding: 10px;
             text-align: justify;
             border: 2px solid black;
-            border-radius: 10px;
+            border-radius: 10px;            
         }
     </style>
 </head>
