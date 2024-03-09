@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+}
+
+body {
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 150px;
+}
+
+header h1 {
+    font-family: "Passion One", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 2.5em;
+}
+
+header p {
+    font-family: verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main p {
+    font-family: "Sriracha", cursive;
+    margin: 25px;
+    font-size: larger;
+}
+
+main section {
+    background: white url('imagens/rato-no-barco.webp') center top no-repeat fixed;
+    background-size: cover;
+    padding: 25px 10px;
+    color: white;
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.377);
+}
+
+section  div {
+    background-color: rgba(0, 0, 0, 0.404);
+    width: max-content;
+    text-shadow: 2px 2px 1px black;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
