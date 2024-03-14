@@ -6,6 +6,8 @@
     <title>Tabelas</title>
     <style>
 
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }        
@@ -13,11 +15,18 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         thead > tr, tfoot > tr {
-            background-color: rgb(87, 87, 87);
+            background-color: rgb(43, 43, 43);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -2px;
+            background-color: rgb(43, 43, 43);
         }
 
         td, th {
@@ -28,15 +37,29 @@
         .num {
             text-align: right;
         }
+        caption {
+            font: small-caps bold 1.5em "Oswald", sans-serif;
+            background-color: rgb(179, 179, 179);  
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(255, 255, 255);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(199, 199, 199);
+        }
+    
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
            <tr>
-               <th>Estado</th>
-               <th>População</th>
+               <th scope="col">Estado</th>
+               <th scope="col" style="width: 100px;">População</th>
            </tr>
         </thead>
         <tbody>
@@ -151,7 +174,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>População Total</th>
+                <th scope="row">População Total</th>
                 <td class="num">214 305 415</td>
             </tr>
         </tfoot>
