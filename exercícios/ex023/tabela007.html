@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        p {
+            text-align: justify;
+            margin: 10px;
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            margin: auto;
+            position: relative;
+        }
+
+         div#tabela > table > thead > tr > th {
+            position: sticky;
+            top: -2px;
+            background-color: rgb(43, 43, 43);
+        }
+
+        #tabela {
+            overflow-x: auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th {
+            width: 100px;
+            background-color: rgb(43, 43, 43);
+            color: white;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(204, 204, 204);
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversão de Sistemas Númericos</h1>
+    <p>Os sistemas númericos são formas de representar valores com determinados simbulos. Durante a história da humanidade foram criados vários sistemas númericos porém o que mais se popularizou e é dominante na atualidade é o <strong>Sistema Decimal</strong>, talvez pelo fato de termos 10 dedos, além de que o nome dígito vem do latim que siguinifica dedo.</p>
+
+    <p>Apesar disso, com o avanço da tecnologia e da computação, as pessoas precisaram criar outros sistemas que fossem mais fácil de ser emplementado pela máquina. Dessa forma, foi desenvolvido o <strong>Sistema Binário</strong>, tendo apenas 2 simbulos: 0 e 1. Para a computação foi muito conviniente porque era maid fácil fazer um computador entender essa linguagem, quando houvesse tensão representaria o 1, quando não, representaria o 0.</p>
+
+    <p>Apesar da conviniencia do sistema binário, por ser um sistema de apenas 2 digitos, suas representações, no geral, são gigantescas. Por exemplos: O número <strong>1534</strong> em binário é representado como <strong>0101 1111 1110</strong>. Enquanto no sistema decimal usá-se 4 digitos para representar esse valor, no binário são necessarios 11 digitos. Para resolver esse incomodo, foram desenvolvido outros sistemas que fossem capazes de representar grandes valores com poucos dígitos, como é o caso do do sistema <strong>Hexadecimal</strong>. A exemplo, aquele mesmo número seria <strong>5FE</strong> em hexadecimal, nessecitando de apenas 3 dígitos. </p>
+
+    <p>O que define um sitema númerico é sua <strong>base</strong>. A base é quantos símbulos um sistema tem. O sistema decimal é de base 10, pois tem 10 símbulos - 0,1, 2, 3, ... 8, 9. O hexadecimal é de base 16, pois vai do 0 ao 9 e do A ao F - equivalente do 10 ao 15 em decimal. O octal é de base 8 pois vai do 0 ao 7. Exemplo dessa representação: 18 <sub>10</sub> (desoito decimais), 6<sub>8</sub>(seis octais), 4F<sub>16</sub>(quatro F hexadecimais).</p>
+
+    <p>O <strong>sistema Octal</strong> foi muito usado como uma forma de representar os números binários de modo mais fácil para nossa compreenção. No entando, com a chagada do sistema hexadecimal, ele mostrou-se mais eficiênte, tornando-se o mais usado atualmente.</p>
+
+    <p>Segue abaixo a tabela de comversão desses sistemas:</p>
+    <div id="tabela">
+        <table>
+            <caption>Tabela de Conversão</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Decimal</th>
+                    <th scope="col">Binário</th>
+                    <th scope="col">Octal</th>
+                    <th scope="col">Hexadecimal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>10</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>11</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>100</td>
+                    <td>4</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>101</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>110</td>
+                    <td>6</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>111</td>
+                    <td>7</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>1000</td>
+                    <td>10</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>1001</td>
+                    <td>11</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>1010</td>
+                    <td>12</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>1011</td>
+                    <td>13</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>1100</td>
+                    <td>14</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>1101</td>
+                    <td>15</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>1110</td>
+                    <td>16</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>1111</td>
+                    <td>17</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Conversão: Decimal para Hexadecimal</h2>
+    <p>
+        Divida o número decimal pela base hexadecimal, que é 16. <br>
+        Anote o resto da divisão, que será um dígito hexadecimal. <br>
+        Divida o resultado da divisão anterior por 16 novamente e repita até que o resultado seja 0. <br>
+        Os restos das divisões, lidos da última para a primeira, formarão o número  hexadecimal correspondente.
+    </p>
+    <p>Exemplo : <br>
+        305 ÷ 16 = 19, resto 1 (corresponde ao dígito 1 em hexadecimal) <br>
+        19 ÷ 16 = 1, resto 3 (corresponde ao dígito 3 em hexadecimal) <br>
+        1 ÷ 16 = 0, resto 1 (corresponde ao dígito 1 em hexadecimal) <br>
+    </p>
+
+    <h2>Converção: Hexadecimal para Decimal</h2>
+    <p>Identifique o valor de cada dígito hexadecimal. <br>
+        Multiplique cada dígito pelo valor correspondente à sua posição (Elevando a base a uma potencia crescente começamdo do zero a parti da virdula e aumentando para a esquerda ou diminuindo par direita - quando não houver virgula, começar do zero).
+        Some os resultados das multiplicações para obter o valor decimal.</p>
+        <p>Vamos converter o número hexadecimal 1A7 para decimal: <br>
+            A = 10, 7 = 7. <br>
+            1A7 em decimal = (1 * 16^2) + (10 * 16^1) + (7 * 16^0) <br>
+            = (1 * 256) + (10 * 16) + (7 * 1) <br>
+            = 256 + 160 + 7 <br>
+            = 423.
+        </p>
+
+</body>
+</html>
