@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            max-width: 800px;
+            text-align: justify;
+            margin: auto;
+            padding: 10px;
+        }
+
+        h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        a {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(90, 90, 90);
+        }
+
+        iframe {
+            width: 90%;
+            height: 300px;
+            display: block;
+            margin: auto;
+            border: 5px solid black;
+            border-radius: 5px;
+            box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.329);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Escolha um tópico</h1>
+        <p>Agora você deverá escolher um dos tópicos abaixo para definir qual será o assunto que abordaremos no iframe abaixo</p>
+        <ul>
+            <li><a href="paginas-extras/pag-mat.html" target="tela">Matemática</a></li>
+            <li><a href="paginas-extras/pag-gas.html" target="tela">Gastronomia</a></li>
+            <li><a href="paginas-extras/pag-esp.html" target="tela">Esporte</a></li>
+        </ul>
+        <iframe name="tela" src="paginas-extras/pag-exi.html" >Infelismente seu navegador não é compatível com essa funcionalidade</iframe>
+        <p>Gostou? Espero que sim, nós estamos a disposição para escutar suas opniões e críticas sobre nosso projeto, por favor, sinta-se à vontade para compartilhar sua opnião conosco atravez do link abaixo:</p>
+        <a href="#">Fale Conosco</a>
+    </main>
+    
+</body>
+</html>
