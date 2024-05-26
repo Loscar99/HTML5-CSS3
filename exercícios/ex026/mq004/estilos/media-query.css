@@ -17,6 +17,7 @@ Grandes Telas: acima de 1200px*/
 
     body{
         margin: 20px;
+        background-image: url(../imagens/back-print.jpg);
     }
 
     main {
