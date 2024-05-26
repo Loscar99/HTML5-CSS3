@@ -1,2 +1,23 @@
 @charset "UTF-8";
 
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px 50px;
+}
+
+main h2, h3 {
+    font-size: 2.2em;
+}
+
+main p {
+    font-size: 1.4em;
+}
+
+blockquote {
+    font-size: 1.4em;
+}
+
+img {
+    width: 100%;
+}
