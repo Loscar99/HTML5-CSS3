@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="estilo/portrait.css" media="screen and (orientation: portrait)">
     <link rel="stylesheet" href="estilo/landscape.css" media="screen and (orientation: landscape)">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>ÚLTIMAS NOTÍCIAS</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="#">Editorias</a></li>
                 <li><a href="#">Jogos</a></li>
-                <li><a href="#">Guia de Compras</a></li>
+                <li><a href="#">Compras</a></li>
                 <li><a href="#">Podcasts</a></li>
                 <li><a href="#">Serciços</a></li>
             </ul>
@@ -138,6 +138,14 @@
     </footer>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= portrait) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'

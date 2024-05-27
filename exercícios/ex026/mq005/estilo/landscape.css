@@ -21,3 +21,20 @@ blockquote {
 img {
     width: 100%;
 }
+
+span#burguer {
+    display: none;
+}
+
+menu {
+    display: block;
+}
+
+menu > ul > li {
+    display: inline-block;
+}
+
+menu > ul > li > a {
+    border-radius: 5px;
+    width: 75px;
+}

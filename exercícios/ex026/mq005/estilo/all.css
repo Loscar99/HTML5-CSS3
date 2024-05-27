@@ -21,13 +21,12 @@ header > h1 {
     font-weight: normal;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 50px;
 }
 
 span#burguer {
-    background-color: rgb(65, 65, 97);
     color: white;
-    display: block;
+    display: inline-block;
     text-align: center;
     padding: 10px;
     cursor: pointer;
@@ -55,7 +54,7 @@ menu > ul > li > a {
     text-decoration: none;
     font-size: 1.1em;
     background-color:  rgb(65, 65, 97);
-    box-shadow: 5px 2px 3px  rgba(0, 0, 0, 0.418);
+    box-shadow: 2px 2px 3px  rgba(0, 0, 0, 0.281);
 }
 
 menu > ul > li > a:hover {
