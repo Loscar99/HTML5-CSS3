@@ -31,14 +31,16 @@ span#burguer {
     padding: 10px;
     cursor: pointer;
     border: 2px solid rgb(9, 9, 85);
+    border-radius: 50%;
 }
 
 span#burguer:hover {
-    background-color: rgb(109, 109, 117);
+    background-color: rgba(255, 255, 255, 0.24);
 }
 
 menu {
     display: none;
+    padding-bottom: 5px;
 }
 
 menu > ul > li {
@@ -49,7 +51,7 @@ menu > ul > li {
 
 menu > ul > li > a {
     display: block;
-    padding: 15px;
+    padding: 10px;
     color: white;
     text-decoration: none;
     font-size: 1.1em;
@@ -58,17 +60,16 @@ menu > ul > li > a {
 }
 
 menu > ul > li > a:hover {
-    background-color: rgb(109, 109, 117);
+    background-color: rgba(255, 255, 255, 0.253);
 }
 
 menu > ul > li > a:active{
     font-size: 0.9em;
-    animation: alternate;
 }
 
 main {
     text-align: justify;
-
+    max-width: 700px;
 }
 
 main h2 {

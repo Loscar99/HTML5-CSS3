@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 main {
-    max-width: 700px;
+
     margin: auto;
     padding: 20px 50px;
 }
@@ -21,20 +21,22 @@ blockquote {
 img {
     width: 100%;
 }
+@media screen and (min-width: 768px) {
+    
+    span#burguer {
+        display: none;
+    }
 
-span#burguer {
-    display: none;
-}
+    menu {
+        display: block;
+    }
 
-menu {
-    display: block;
-}
+    menu > ul > li {
+        display: inline-block;
+    }
 
-menu > ul > li {
-    display: inline-block;
-}
-
-menu > ul > li > a {
-    border-radius: 5px;
-    width: 75px;
+    menu > ul > li > a {
+        border-radius: 5px;
+        width: 100px;
+    }
 }
